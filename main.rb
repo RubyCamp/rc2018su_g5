@@ -1,5 +1,5 @@
-include 'dxruby'
+require 'dxruby'
 
 Window.loop do
-  
+
 end
