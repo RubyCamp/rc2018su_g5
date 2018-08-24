@@ -1,4 +1,4 @@
-class Gauge < Sprite
+class Gauge
   attr_accessor :fore_image, :diff_image
 
   GAUGE_IMAGE = Image.load('images/game/gauge.png')
@@ -24,7 +24,6 @@ class Gauge < Sprite
     @fore_image = Image.new(@frame_image.width, @frame_image.height, C_GREEN)
     @fore_sprite = Sprite.new(@frame_sprite.x, @frame_sprite.y, @fore_image)
     @player = player
-    super
   end
 
   def update
